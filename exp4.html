@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        p{
+            text-align: center;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <h2>HOTEL ROOM BOOKING</h2>
+    <form action="backened.php">
+        <div>
+            Full Name:<input type="text" name="my name">
+        </div>
+        <br>
+        <div>
+            Phone:<input type="number" name="my number">
+        </div>
+        <br>
+        <div>
+            Email:<input type="email" name="my email">
+        </div>
+        
+        <br>
+        <div>
+           Check-in-date:<input type="date" name="my date">       </div>
+            <br>
+            <div>
+                
+            Check-Out-Date:<input type="date" name="my date">    
+                </div>
+                <br>
+                <div>
+                    <label for="Room Type">Room Type</label>
+                    <select name="Room Type" id="Room Type">
+                        <option value="Single Room">Single Room</option>
+                        <option value="Double Room">Double Room</option>
+                        <option value="Triple Room">Triple Room</option>
+                    </select>
+                </div>
+                <br><div>
+                Number of Guests:<input type="number" name="Number of Guests"></div>
+                <br>
+                <div>
+                    Special Requests:<br><textarea name="my text" cols="30" rows="5"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Register</button>
+                    <input type="Reset" name="Reset Now">
+                </div>
+                
+
+                
+
+    </form>
+    
+</body>
+</html>
