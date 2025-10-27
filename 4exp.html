@@ -1,0 +1,92 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial
+scale=1.0"> 
+    <title>Hotel Room Booking Form</title> 
+    <style> 
+        /* Basic CSS for the required layout and readability */ 
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 20px; 
+        } 
+        form div { 
+            margin-bottom: 10px; 
+        } 
+        label { 
+            display: inline-block; 
+            width: 150px; /* Aligns the input fields */ 
+            text-align: right; 
+            margin-right: 10px; 
+        } 
+        h1 { 
+            text-align: center; 
+        } 
+    </style> 
+</head> 
+<body> 
+ 
+    <h1>Hotel Room Booking Form</h1> 
+ 
+    <form action="submit_booking.html" method="post"> 
+         
+        <div> 
+            <label for="fullName">Full Name:</label> 
+            <input type="text" id="fullName" name="fullName" required> 
+        </div> 
+         
+        <div> 
+            <label for="email">Email:</label> 
+            <input type="email" id="email" name="email" required> 
+        </div> 
+         
+        <div> 
+            <label for="phone">Phone:</label> 
+            <input type="tel" id="phone" name="phone"> 
+        </div> 
+ 
+        <div> 
+            <label for="checkIn">Check-in Date:</label> 
+            <input type="date" id="checkIn" name="checkIn" pattern="\d{2}
+\d{2}-\d{4}" title="dd-mm-yyyy" required> 
+            <small>dd-mm-yyyy</small> 
+        </div> 
+ 
+        <div> 
+            <label for="checkOut">Check-out Date:</label> 
+            <input type="date" id="checkOut" name="checkOut" 
+pattern="\d{2}-\d{2}-\d{4}" title="dd-mm-yyyy" required> 
+            <small>dd-mm-yyyy</small> 
+        </div> 
+ 
+        <div> 
+            <label for="roomType">Room Type:</label> 
+            <select id="roomType" name="roomType" required> 
+                <option value="single">Single Room</option> 
+                <option value="double">Double Room</option> 
+                <option value="suite">Suite</option> 
+            </select> 
+        </div> 
+ 
+        <div> 
+            <label for="guests">Number of Guests:</label> 
+            <input type="number" id="guests" name="guests" min="1" 
+max="10" value="1" required> 
+        </div> 
+ 
+        <div> 
+            <label for="requests" style="width: 100%; text-align: left; display: 
+block; margin-top: 15px;">Special Requests:</label> 
+            <textarea id="requests" name="requests" rows="5" cols="50" 
+style="width: 98%; max-width: 500px;"></textarea> 
+        </div> 
+ 
+        <div style="text-align: center; margin-top: 20px;"> 
+            <button type="submit">Book Now</button> 
+            <button type="reset">Reset Form</button> 
+        </div> 
+    </form> 
+ 
+</body> 
+</html>
